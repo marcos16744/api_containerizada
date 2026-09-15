@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from .app import crud, schemas
+from app import crud, schemas
 
 
 app = FastAPI(title="API Containerizada")
