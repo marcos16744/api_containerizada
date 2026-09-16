@@ -7,8 +7,9 @@ class TarefaCreate(BaseModel):
 
 
 class TarefaResponse(BaseModel):
+    id: int
     titulo: str
     descricao: str
 
-
-
+    class Config:
+        from_attributes = True
